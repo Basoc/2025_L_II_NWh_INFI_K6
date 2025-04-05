@@ -6,12 +6,7 @@ jobs:
 
   build-and-test:  
 
-    docker: 
-
-      image: cimg/python:3.10 
-
-        
-
+    machine: true   
     steps: 
 
       - checkout 
