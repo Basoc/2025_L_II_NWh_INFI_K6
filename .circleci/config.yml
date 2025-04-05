@@ -6,8 +6,12 @@ jobs:
 
   build-and-test:  
 
-    machine:
-	image: ubuntu-2204:2023.10.1 
+    machine: 
+
+      image: ubuntu-2004:202104-01 
+
+        
+
     steps: 
 
       - checkout 
@@ -23,5 +27,3 @@ workflows:
     jobs: 
 
       - build-and-test 
-
-
