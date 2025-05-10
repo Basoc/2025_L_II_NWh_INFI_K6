@@ -19,7 +19,7 @@ docker_run: docker_build
 USERNAME=basoc
 TAG=$(USERNAME)/hello-world-printer
 docker_push: docker_build
-	@docker login --username $(USERNAME) --password $$(dckr_pat_cxM8dJy7B6VFWCzoDal-GogGEWQ); \
+	@docker login --username $(USERNAME) --password $$(DOCKER_PASSWORD); \
 	docker tag hello-world-printer $(TAG); \
 	docker push $(TAG); \
 	docker logout;
